@@ -57,6 +57,7 @@
 
   async function createResult(title, lang) {
     spinner.style.display = "inline-block";
+    WordGen.realGuard = true;
     WordGen.letterLimit = 10;
     WordGen.sliceMax = 2000;
     const result = await WordGen.create(title, lang);
